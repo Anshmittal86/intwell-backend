@@ -11,10 +11,10 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 const corsOptions = {
   origin: [
-    'https://intwell.vercel.app/',
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'https://www.intwell.in'
+    'https://intwell.vercel.app/chat',
+    'http://localhost:3000/chat',
+    'http://localhost:5173/chat',
+    'https://www.intwell.in/chat'
   ], // Replace with your frontend's domain
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
