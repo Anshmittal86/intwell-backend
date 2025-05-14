@@ -10,7 +10,12 @@ const PORT = process.env.PORT || 3000;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 const corsOptions = {
-  origin: '*', // Replace with your frontend's domain
+  origin: [
+    'https://intwell.vercel.app/',
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://www.intwell.in'
+  ], // Replace with your frontend's domain
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 };
