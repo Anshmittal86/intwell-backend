@@ -9,6 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
+const corsOptions = {
+  origin: 'https://intwell.vercel.app/', // Replace with your frontend's domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true
+};
+
 app.use(cors());
 app.use(express.json()); // for POST support
 
