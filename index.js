@@ -15,7 +15,7 @@ const corsOptions = {
   credentials: true
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json()); // for POST support
 
 const system_prompt = `
